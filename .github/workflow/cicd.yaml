@@ -9,7 +9,7 @@ permissions:
     id-token: write
 jobs:
   deploy:
-    runs-on: ubuntu-latest  #terraform
+    runs-on: self-hosted
     env:
       AWS_ACCESS_KEY_ID: ${{ secretes.AWS_ACCESS_KEY_ID }}
       AWS_SECRETE_ACCESS_KEY: ${{ secretes.AWS_SECRETE_ACCESS_KEY }}
